@@ -22,8 +22,11 @@ Run through command line using newman: https://www.npmjs.com/package/newman
 
 Install:
 $ npm install -g newman
+
 Usage:
 $ newman run examples/sample-collection.json
 
+Checking help:
+$ newman run -h
 
 
