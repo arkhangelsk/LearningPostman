@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "6b17da2b-eaf3-970f-56e3-fcd71fedea25",
+		"name": "StudentApp",
+		"description": "This collection is a place for storing all request for the Student App.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DELETE Request",
+			"item": []
+		},
+		{
+			"name": "GET Request",
+			"item": [
+				{
+					"name": "{{url}}/student/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{url}}/student/list",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"student",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{url}}/student/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{url}}/student/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"student",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{url}}/student/list?programme=Computer Science",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{url}}/student/list?programme=Computer Science",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"student",
+								"list"
+							],
+							"query": [
+								{
+									"key": "programme",
+									"value": "Computer Science"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PATCH Request",
+			"item": []
+		},
+		{
+			"name": "POST Request",
+			"item": [
+				{
+					"name": "{{url}}/student/list?programme=Computer Science&limit=2",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "postman",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"value": true,
+									"type": "boolean"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic cG9zdG1hbjpwYXNzd29yZA=="
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n  {\n    \"firstName\": \"Ritesh\",\n    \"lastName\": \"Harper\",\n    \"email\": \"ritesh@gmail.com\",\n    \"programme\": \"Financial Analysis\",\n    \"courses\": [\n      \"Accounting\",\n      \"Statistics\"\n  \n]\n}"
+						},
+						"url": {
+							"raw": "{{url}}/student",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"student"
+							]
+						},
+						"description": "On PAT"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "PUT Request",
+			"item": []
+		}
+	]
+}
