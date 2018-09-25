@@ -1,4 +1,4 @@
-Setting up Variables on folder, global and environment level:
+# Setting up Variables on folder, global and environment level:
 
 pm.variables.get(); 
 pm.variables.set();
