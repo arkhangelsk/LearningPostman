@@ -1,0 +1,14 @@
+[
+    {
+        "endpoint" : "api/register/preprod",
+        "password" : "pistol",
+        "email" : "sydney@fife"
+
+    },
+    {
+        "endpoint" : "api/register/preprod",
+        "password" : "pistoler",
+        "email" : "sydneymian@fife"
+
+    }
+]
